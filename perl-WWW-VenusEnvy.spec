@@ -7,7 +7,7 @@
 %define	pdir	WWW
 %define	pnam	VenusEnvy
 Summary:	WWW::VenusEnvy - Retrieve VenusEnvy comic strip images
-#Summary(pl.UTF-8):	
+Summary(pl.UTF-8):	WWW::VenusEnvy - pobieranie komiksu VenusEnvy
 Name:		perl-WWW-VenusEnvy
 Version:	1.10
 Release:	1
@@ -19,9 +19,9 @@ URL:		http://search.cpan.org/dist/WWW-VenusEnvy/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 %if %{with autodeps} || %{with tests}
-BuildRequires:	perl-libwww
 BuildRequires:	perl-Test-Pod
 BuildRequires:	perl-Test-Pod-Coverage
+BuildRequires:	perl-libwww
 %endif
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -31,8 +31,9 @@ This module will download the latest VenusEnvy comic strip from the
 Keenspace website and return a binary blob of the image, or write it
 to disk.
 
-# %description -l pl.UTF-8
-# TODO
+%description -l pl.UTF-8
+Ten moduł ściga ostatnią stronę komiksu VenusEnvy z serwisu WWW
+Keepspace i zwraca obrazek w postaci binarnej lub zapisuje na dysku.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
