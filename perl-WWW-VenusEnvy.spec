@@ -3,7 +3,6 @@
 %bcond_without	autodeps	# don't BR packages needed only for resolving deps
 %bcond_with	tests		# perform "make test" (uses network)
 #
-%include	/usr/lib/rpm/macros.perl
 %define	pdir	WWW
 %define	pnam	VenusEnvy
 Summary:	WWW::VenusEnvy - Retrieve VenusEnvy comic strip images
