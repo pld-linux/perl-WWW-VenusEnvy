@@ -9,7 +9,7 @@ Summary:	WWW::VenusEnvy - Retrieve VenusEnvy comic strip images
 Summary(pl.UTF-8):	WWW::VenusEnvy - pobieranie komiksu VenusEnvy
 Name:		perl-WWW-VenusEnvy
 Version:	1.10
-Release:	1
+Release:	2
 License:	Apache v2.0
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/WWW/%{pdir}-%{pnam}-%{version}.tar.gz
